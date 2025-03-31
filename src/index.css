@@ -67,6 +67,18 @@ body {
     padding: 0.5rem 0;
 }
 
+.player input {
+  font: inherit;
+  font-size: 1rem;
+  width: 10rem;
+  border: none;
+  padding: 0.5rem;
+  animation: pulse-text 2s infinite;
+  background-color: #d9f2eb;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .player button {
     border: none;
     background-color: transparent;
@@ -102,5 +114,17 @@ body {
   100% {
     border-color: #f6e35a;
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
+  }
+}
+
+@keyframes pulse-text {
+  0% {
+    color: #c7cbe1;
+  }
+  50% {
+    color: #0d63a5;
+  }
+  100% {
+    color: #c7cbe1;
   }
 }
