@@ -5,18 +5,13 @@ function App() {
 
 
   return (
-    <> 
-      <div className="game-wrapper">
-        <div className='players-wrapper'>
+      <div id="game-container">
+        <ol id="players" className="highlight-player"> 
           <Player />
           <Player />
-        </div>
-        <div className="game-board">
-          
-        </div>
+        </ol>
+
       </div>
-      
-    </>
   )
 }
 

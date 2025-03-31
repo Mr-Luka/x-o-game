@@ -1,14 +1,12 @@
 export default function Player(){
 
     return (
-        <>
-            <div className='players-wrapper'>
-                <div className='player'>
-                    <h4>Player 1</h4>
-                    <p>Symbol</p>
-                    <button>Edit</button>
-                </div>
-            </div>
-        </>
+        <li >
+            <span className="player">
+            <span className="player-name">Player 1</span>
+            <span className="player-symbol">symbol</span>
+            <button>Edit</button>
+            </span>
+           </li>
     )
 }
