@@ -5,7 +5,8 @@ export default function GameBoard({handlePlayersMove, board}) {
                 <ol>
                     {row.map((playerSymbol, colIndex)=> <li key={colIndex}>
                         <button
-                            onClick={()=> handlePlayersMove(rowIndex, colIndex)}    
+                            onClick={()=> handlePlayersMove(rowIndex, colIndex)}  
+                            disabled={board[rowIndex][colIndex] !== null}
                         >{playerSymbol}</button>
                     </li>)}
                 </ol>
